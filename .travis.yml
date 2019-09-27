@@ -1,6 +1,8 @@
 before_install: 
   - sudo apt-get update
   - test -n $CC && unset CC
+install: 
+  - make get-deps
 language: 
   - c
 compiler: 
